@@ -20,37 +20,59 @@
     <script src="/javascripts/all.js" type="text/javascript"></script>
   </head>
   <body>
-    <div style='background-image: url("/images/orangestripe.png");'>
-        <section class="container clearfix message" style="color:#fff;font-size:1.3em;line-height: 2em;font-weight:bold;" >
-            <p>Hello, yobriefcasts.tv is still in BETA, so expect the unexpected for the time being. <a href="/about">[Read More]</a></p>
+    <div id="announcement">
+        <a href="#" class="dismissable" data-id="50ed23ee924db73c72b8c8d8">X</a>
+        <section class="container clearfix message">
+            <p>Another test</p>
 
         </section>
     </div>
-    <div style="background-color: #000">
-        <section class="container clearfix content" style="padding-top:20px;">
-            <header class="page-header" style="border-bottom: none;">
-                <h1 class="page-title" style="padding-bottom:10px;">
-                    <a href="/" style="color:#fff;">yobriefcasts.tv</a>
+    <script>
+      // yes this is very much here right now this is fine by me, come at me haters
+      (function(){
+        var banner      = $('#announcement');
+        var dismissable = banner.find("a.dismissable");
+        var current     = dismissable.data("id");
+        var last        = monster.get("last_dismissed_id");
+
+        if((last !== null && current > last) || last === null){
+          banner.find("a.dismissable").click(function(){
+            banner.fadeOut()
+            monster.set("last_dismissed_id", current)
+            return false;
+          })
+        } else {
+          banner.remove()
+        }
+      })()
+    </script>
+    <div id="header">
+        <section class="container clearfix content">
+            <header class="page-header">
+                <h1 class="page-title">
+                    <a href="/">yobriefcasts.tv</a>
                 </h1>
             </header>
         </section>
     </div>
-      <section class="container clearfix content" style="padding-top: 10px;">
+      <section class="container clearfix content screencast">
     <section class="clearfix">
-      
       <section class="latest clearfix">
-        <article class="one-half">
+        <article class="one-half video-placeholder">
           <a href="https://www.youtube.com/embed/0hHkoJD3f5o?rel=0&showinfo=0" class="iframe video" title="Introducing Play! 2">
-            <img src="images/screenshots/50eb4c8c6170390dea000001.png" style="width:100%;" />
+            <img src="images/screenshots/50eb4c8c6170390dea000001.png" />
           </a>    
         </article>
-        <article class="one-half last" data-categories="animation web">
+        <article class="one-half last details-placeholder">
           <a href="screencasts/50eb4c8c6170390dea000001/" class="project-meta">
-            <h1 style="font-size:250%">Introducing Play! 2</h1>
+            <h1>Introducing Play! 2</h1>
             
-            <h3 class="page-title" style="font-size:200%">(0:23)</h3>
+            <h3 class="page-title">
+                <span class="date">(0:23)</span>
+                <span class="date">01/01/2013</span>
+            </h3>
           </a>
-          <span style="font-size:160%;">
+          <span class="description">
             Play! 2 is a Java/Scala framework based on a lightweight, stateless, web-friendly architecture for highly-scalable applications.  This screencast will act as a primer for getting up and running with Play! 2.
           </span>
         </article>
@@ -58,7 +80,6 @@
     </section>
   </section>
 
-  
     <footer id="footer" class="clearfix">
       <div class="container">
       </div>
