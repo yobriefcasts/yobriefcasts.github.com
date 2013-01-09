@@ -10,7 +10,7 @@
     
     <title>yobriefcasts.tv</title>
     
-    <meta name="description" content="screencasts for the perpertual disappointed">
+    <meta name="description" content="screencasts for the perpertually disappointed">
     <meta name="author" content="James Hughes">
     
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic" />
@@ -38,7 +38,7 @@
         if((last !== null && current > last) || last === null){
           banner.find("a.dismissable").click(function(){
             banner.fadeOut()
-            monster.set("last_dismissed_id", current)
+            monster.set("last_dismissed_id", current, 93)
             return false;
           })
         } else {
