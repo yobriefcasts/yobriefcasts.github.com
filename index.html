@@ -10,7 +10,7 @@
     
     <title>yobriefcasts.tv</title>
     
-    <meta name="description" content="screencasts for the perpertually disappointed">
+    <meta name="description" content="Screencasts for the Perpetually Disappointed">
     <meta name="author" content="James Hughes">
     
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic" />
@@ -21,7 +21,7 @@
   </head>
   <body>
     <div id="announcement">
-        <a href="#" class="dismissable" data-id="50ef2a3f32c26a6f00cce898">X</a>
+        <a href="#" class="dismissible" data-id="50ef2a3f32c26a6f00cce898">X</a>
         <section class="container clearfix message">
             <p>Hello. yobriefcasts.tv is still in BETA, so expect the unexpected for the time being. <a href="/about">[Read More]</a></p>
 
@@ -31,15 +31,19 @@
       // yes this is very much here right now this is fine by me, come at me haters
       (function(){
         var banner      = $('#announcement');
-        var dismissable = banner.find("a.dismissable");
-        var current     = dismissable.data("id");
+        var dismissible = banner.find("a.dismissible");
+        var current     = dismissible.data("id");
         var last        = monster.get("last_dismissed_id");
 
         if((last !== null && current > last) || last === null){
-          banner.find("a.dismissable").click(function(){
-            banner.fadeOut()
-            monster.set("last_dismissed_id", current, 93)
-            return false;
+          banner.click(function(event){
+            // if anything is clicked that is not a standard link then we
+            // want to dismiss the header
+            if(!$(event.target).is("a:not(.dismissible)")){
+                banner.fadeOut()
+                monster.set("last_dismissed_id", current, 93)
+                return false;
+            }
           })
         } else {
           banner.remove()
@@ -100,6 +104,6 @@
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
-    <!-- 11/01/2013 11:57:47 -->
+    <!-- 12/01/2013 22:21:48 -->
   </body>
 </html>
