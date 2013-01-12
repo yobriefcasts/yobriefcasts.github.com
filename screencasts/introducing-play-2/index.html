@@ -66,7 +66,15 @@
     <section class="clearfix">
       <section class="latest clearfix">
         <article>
-            <iframe width="940" height="529" src="https://www.youtube.com/embed/0hHkoJD3f5o?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <div class="h_iframe">
+            <img class="ratio" src="http://placehold.it/16x9"/>
+            <iframe src="https://www.youtube.com/embed/0hHkoJD3f5o?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <style>
+            .h_iframe        {position:relative;}
+            .h_iframe .ratio {display:block;width:100%;height:auto;}
+            .h_iframe iframe {position:absolute;top:0;left:0;width:100%; height:100%;}
+          </style>
         </article>
         <article class="details-placeholder">
           <h1>Introducing Play! 2</h1>
@@ -116,6 +124,6 @@
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
-    <!-- 12/01/2013 22:21:48 -->
+    <!-- 12/01/2013 22:44:23 -->
   </body>
 </html>
