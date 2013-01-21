@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <title>yobriefcasts.tv</title>
+    
+    <meta name="description" content="Screencasts for the Perpetually Disappointed">
+    <meta name="author" content="James Hughes">
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic" />
+
+    <link href="/stylesheets/jquery.fancybox.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/styles.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="announcement">
+        <a href="#" class="dismissible" data-id="50f931f8d584bc8a0000cb2c">X</a>
+        <section class="container clearfix message">
+            
+                <a href="/news/50f931f8d584bc8a0000cb2c" style="color:#fff;text-decoration:none;">
+                  <p>Inception: yobriefcasts.tv</p>
+
+                </a>
+            
+        </section>
+    </div>
+    <script>
+      // yes this is very much here right now this is fine by me, come at me haters
+      (function(){
+        var banner      = $('#announcement');
+        var dismissible = banner.find("a.dismissible");
+        var current     = dismissible.data("id");
+        var last        = monster.get("last_dismissed_id");
+
+        if((last !== null && current > last) || last === null){
+          banner.click(function(event){
+            // if anything is clicked that is not a standard link then we
+            // want to dismiss the header
+            if(!$(event.target).is(":not(a)")){
+                banner.fadeOut()
+                monster.set("last_dismissed_id", current, 93)
+                return false;
+            }
+          })
+        } else {
+          banner.remove()
+        }
+      })()
+    </script>
+    <div id="header">
+        <section class="container clearfix content">
+            <header class="page-header">
+                <h1 class="page-title">
+                    <a href="/">
+                      <img src="/images/logo.png" class="logo"/>
+                    </a>
+                    <a href="/" style="margin-left:15px;">yobriefcasts.tv</a>
+                </h1>
+            </header>
+        </section>
+    </div>
+      <section class="container clearfix content">
+      <section class="clearfix">
+          <header class="page-header">
+              <h1 class="page-title">
+                <a href="/news/50f931f8d584bc8a0000cb2c">
+                  Inception: yobriefcasts.tv
+                </a>
+              </h1>
+          </header>
+          <section class="latest clearfix">
+            <article style="font-size:1.6em; color:#333;">
+              <p>Since I started <a href="http://yobriefca.se">my blog</a> by far the most popular and useful post has been the
+<a href="http://yobriefca.se/blog/2012/05/08/starter-for-10-scala/">Starter for 10 - Scala, Play 2 and Mongo</a>.  Luckily this just happened to be the type of post I enjoy writing the most.  The downside to these sort of post is the fact that long form text interspersed with code snippets is not the best medium for consuming this sort of information.  Sure you can copy/paste code to your heart’s content but that’s not really learning is it - and truth be told there is growing evidence to suggest people just blindly copy/paste my snippets without reading the preceding explanation.</p>
+
+<p>When it comes to learning I’ve always found video to be an excellent medium - you can start/stop/rewind/skip to your hearts content and follow along at your own pace.  I love the quality, the passion and the effort found in the likes of <a href="http://tekpub.com">TekPub</a>, <a href="http://peepcode.com">Peepcode</a> and <a href="http://railscasts.com">Railscasts</a> and I hope to pour myself into these little nuggets of audio-visual learning as these folks do.</p>
+
+<p>So thats the inspiration and the thought process behind this site - now let’s touch on the content.  There are 2 things I know to be true right now,</p>
+
+<ol>
+  <li>The community around the JVM is colossal.  The ecosystem is full of amazing technologies and languages that deserve to be showcased</li>
+  <li>The community around the JVM doesn’t really have anything like <a href="http://tekpub.com">TekPub</a>, <a href="http://peepcode.com">Peepcode</a> or <a href="http://railscasts.com">Railscasts</a> and thats unfortunate.</li>
+</ol>
+
+<p>So is this going to be “The Railscasts of the JVM”?  Perhaps but I don’t necessarily think that is going to be a law that must be adhered to, but there is heap of noteworthy tools and libraries in that space that could occupy me for the next decade - from languages like <a href="http://www.scala-lang.org/">Scala</a>, <a href="http://clojure.org/">Clojure</a>, <a href="http://kotlin.jetbrains.org/">Kotlin</a>, <a href="http://openjdk.java.net/projects/jdk8/">Java 8</a> etc. to tools and frameworks like <a href="http://www.playframework.org/">Play! 2</a>, <a href="http://reactivemongo.org/">ReactiveMongo</a>, <a href="http://akka.io/">Akka</a>, <a href="https://github.com/ring-clojure/ring">Ring</a>, <a href="https://github.com/weavejester/compojure">Compojure</a>, <a href="https://github.com/TinyMission/kara">Kara</a>, <a href="https://github.com/AnormCypher/AnormCypher">AnormCypher</a>, <a href="http://twitter.github.com/finagle/">Finagle</a>, <a href="http://dropwizard.codahale.com/">DropWizard</a> etc etc etc.  Let’s not forget all the wonderful client-side JavaScript and CSS libraries that we can make use of alongside these frameworks.  Or persistence mechanisms like <a href="http://neo4j.org">Neo4J</a>, <a href="http://www.mongodb.org/">Mongo</a>, <a href="http://www.postgresql.org/">Postgres</a>.  What I’m saying is - while I’m not intentionally making these screencasts about the JVM ecosystem I suspect there will be a very strong leaning towards it.  Thats said a “Railscasts of the JVM” wouldn’t actually be a bad idea and if I could provide 1% of what Railscasts does - it’d be better than nothing. </p>
+
+<p>I’m going to kick off the whole thing with a look at Play! 2 because it’s been a staple in my work since it was released and, well, its nice.  Right now there is enough of a site here to be getting on with things but expect things to change for a while.</p>
+
+<p><img src="/images/posts/about_1.jpg" style="width:100%;" /></p>
+
+            </article>
+         </section>
+      </section>
+  </section>
+
+    <footer id="footer" class="clearfix">
+      <div class="container">
+      </div>
+    </footer>
+    <footer id="footer-bottom" class="clearfix">
+      <div class="container">
+        <ul>
+          <li>yobriefcasts.tv &copy; 2013</li>
+          <li>
+            <a href="mailto:info@yobriefcasts.tv">info@yobriefcasts.tv</a>
+          </li> 
+          <li>
+            <a href="http://twitter.com/yobriefcasts">@yobriefcasts</a>
+          </li>
+          <li>
+            <a href="http://yobriefca.se">yobriefca.se</a>
+          </li>
+        </ul>
+      </div>
+        
+    </footer>
+
+    <script type="text/javascript">
+      var _gaq=[['_setAccount','UA-19143623-14'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <!-- 21/01/2013 11:56:36 -->
+  </body>
+</html>
+
+
+
+
+
+
+

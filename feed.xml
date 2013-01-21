@@ -5,4 +5,32 @@
   <id>http://yobriefcasts.tv</id>
   <link href="http://yobriefcasts.tv"/>
   <link href="http://yobriefcasts.tv/feed" rel="self"/>
+  <entry>
+    <title>Starter for 10: Play! 2 - Part One</title>
+    <link rel="alternate" href="http://yobriefcasts.tv/starter-for-10-play-2-part-one-introduction-installation-the-cli"/>
+    <id>http://yobriefcasts.tv/starter-for-10-play-2-part-one-introduction-installation-the-cli</id>
+    <published>2013-01-21T00:00:00+00:00</published>
+    <updated>2013-01-21T00:00:00+00:00</updated>
+    <author>
+      <name>James Hughes</name>
+    </author>
+    <summary type="html">&lt;p&gt;Play! 2 is a Java/Scala framework based on a lightweight, stateless, web-friendly architecture for highly-scalable applications.  In this episode we will look at&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Introduction to Play! 2,  &lt;/li&gt;
+  &lt;li&gt;Downloading &amp;amp; Installating Play! &lt;/li&gt;
+  &lt;li&gt;Using PVM (Play Version Manager) to Install Play! &lt;/li&gt;
+  &lt;li&gt;A brief tour of the command line interface.&lt;/li&gt;
+&lt;/ul&gt;
+</summary>
+    <content type="html">&lt;p&gt;Play! 2 is a Java/Scala framework based on a lightweight, stateless, web-friendly architecture for highly-scalable applications.  In this episode we will look at&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Introduction to Play! 2,  &lt;/li&gt;
+  &lt;li&gt;Downloading &amp;amp; Installating Play! &lt;/li&gt;
+  &lt;li&gt;Using PVM (Play Version Manager) to Install Play! &lt;/li&gt;
+  &lt;li&gt;A brief tour of the command line interface.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
 </feed>
