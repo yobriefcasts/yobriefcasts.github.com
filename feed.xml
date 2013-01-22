@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>yobriefcasts.tv</title>
-  <subtitle>Screencasts for the Perpetually Disappointed</subtitle>
+  <subtitle>JVM Flavoured Screencasts</subtitle>
   <id>http://yobriefcasts.tv</id>
   <link href="http://yobriefcasts.tv"/>
   <link href="http://yobriefcasts.tv/feed" rel="self"/>
