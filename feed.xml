@@ -6,6 +6,32 @@
   <link href="http://yobriefcasts.tv"/>
   <link href="http://yobriefcasts.tv/feed" rel="self"/>
   <entry>
+    <title>Starter for 10: Play! 2 - Part Two</title>
+    <link rel="alternate" href="http://yobriefcasts.tv/screencasts/starter-for-10-play-2-part-two-controllers-actions-views-routes"/>
+    <id>http://yobriefcasts.tv/screencasts/starter-for-10-play-2-part-two-controllers-actions-views-routes</id>
+    <published>2013-01-27T00:00:00+00:00</published>
+    <updated>2013-01-27T00:00:00+00:00</updated>
+    <author>
+      <name>James Hughes</name>
+    </author>
+    <summary type="html">&lt;p&gt;Play! 2 is a Java/Scala framework based on a lightweight, stateless, web-friendly architecture for highly-scalable applications.  In this episode we will look at&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Creating Controllers &amp;amp; Actions&lt;/li&gt;
+  &lt;li&gt;Creating read-only views&lt;/li&gt;
+  &lt;li&gt;Routes and URL matching&lt;/li&gt;
+&lt;/ul&gt;
+</summary>
+    <content type="html">&lt;p&gt;Play! 2 is a Java/Scala framework based on a lightweight, stateless, web-friendly architecture for highly-scalable applications.  In this episode we will look at&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Creating Controllers &amp;amp; Actions&lt;/li&gt;
+  &lt;li&gt;Creating read-only views&lt;/li&gt;
+  &lt;li&gt;Routes and URL matching&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
     <title>Starter for 10: Play! 2 - Part One</title>
     <link rel="alternate" href="http://yobriefcasts.tv/screencasts/starter-for-10-play-2-part-one-introduction-installation-the-cli"/>
     <id>http://yobriefcasts.tv/screencasts/starter-for-10-play-2-part-one-introduction-installation-the-cli</id>
