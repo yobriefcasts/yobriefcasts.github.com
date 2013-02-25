@@ -6,6 +6,24 @@
   <link href="http://yobriefcasts.tv"/>
   <link href="http://yobriefcasts.tv/feed" rel="self"/>
   <entry>
+    <title>Uploading Files with Play! 2</title>
+    <link rel="alternate" href="http://yobriefcasts.tv/screencasts/uploading-files-with-play-2"/>
+    <id>http://yobriefcasts.tv/screencasts/uploading-files-with-play-2</id>
+    <published>2013-02-25T00:00:00+00:00</published>
+    <updated>2013-02-25T00:00:00+00:00</updated>
+    <author>
+      <name>James Hughes</name>
+    </author>
+    <summary type="html">&lt;p&gt;Source: &lt;a href="https://github.com/yobriefcasts/006-play-file-uploads"&gt;https://github.com/yobriefcasts/006-play-file-uploads&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A quick look at how to achieve file uploads with Play! 2 including other form fields and uploading more than one file&lt;/p&gt;
+</summary>
+    <content type="html">&lt;p&gt;Source: &lt;a href="https://github.com/yobriefcasts/006-play-file-uploads"&gt;https://github.com/yobriefcasts/006-play-file-uploads&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A quick look at how to achieve file uploads with Play! 2 including other form fields and uploading more than one file&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
     <title>play-reactivemongo</title>
     <link rel="alternate" href="http://yobriefcasts.tv/screencasts/play-reactivemongo-reactivemongo-plugin-for-play-2"/>
     <id>http://yobriefcasts.tv/screencasts/play-reactivemongo-reactivemongo-plugin-for-play-2</id>
